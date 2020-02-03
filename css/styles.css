@@ -1,0 +1,57 @@
+body {
+    font-family:"Open Sans", sans-serif;
+    /*This will display sans-serif font if Open Sans is not available.*/
+}
+
+h1, h2, h3 {
+    font-family: "Lobster", cursive;
+
+    /*using comma between h1,h2 and h3 allows rules to be applied to all three.*/
+}
+
+h2 {
+    color: #3046C5;
+}
+
+header h2 {
+    color: #CEC8FF;
+    /*This will target all h2 two elements that are under the header element.*/
+}
+
+.site-footer {
+    background-image: linear-gradient(#CEC8FF, white);
+    padding: 20px 0;
+    /*20 pixels each for top and bottom padding and 0 padding for left and right sides*/
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+    color: white;
+/*Can style this bootstrap defined class
+padding has 30px on all four sides*/
+}
+
+.row-content {
+    padding: 0px 0;
+    border-bottom: 1px ridge;
+    min-height: 1px;
+    /*min-height is how you control how tall each row is*/
+    /*padding has 50px on the top and bottom and 0 pixels on the left and right
+    border-bottom style with thickness of one pixel and a ridge type
+    
+    **original code for index.html**
+    .row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 150px;
+    /*min-height is how you control how tall each row is*/
+    /*padding has 50px on the top and bottom and 0 pixels on the left and right
+    border-bottom style with thickness of one pixel and a ridge type*/
+}
+
+.navbar {
+   background-color: #901CAD;
+}
+    
