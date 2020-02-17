@@ -33,7 +33,7 @@
             <div class="col-xs-12 col-md-4 col-xl-2">
                 <a data-toggle="modal" data-target="#reserveForm" class="text-light btn btn-info">Reserve Campsite</a>
                 <!-- tooltip that shows nucamp phone number <a href=#reserveForm role="button" class="btn btn-lg 
-                        btn-info" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br/><strong>1-206-555-1234</strong>">Reserve Campsite -->
+                                                                                                                                                                                                                                                                                                                                    btn-info" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br/><strong>1-206-555-1234</strong>">Reserve Campsite -->
                 <!-- start Reserve Form Modal -->
                 <div id="reserveForm" class="modal fade" role="dialog">
                     <div class="modal-dialog" role="document">
@@ -134,20 +134,21 @@
 
             <span class="navbar-text ml-auto">
                 <a data-toggle="modal" data-target="#loginModal">
-                    <i class="fa fa-sign-in"> </i> Login
+                    <i class="fa fa-sign-in"></i>
+                    Login
                 </a>
             </span>
 
 
         </div>
     </div>
-</nav>
-<!-- Login Modal -->
+</nav><!-- Login Modal -->
 <div id="loginModal" class="modal fade" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title">Login </h3>
+                <h3 class="modal-title">Login
+                </h3>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
@@ -167,7 +168,8 @@
                             <div class="col">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox">
-                                    <label class="form-check-label"> Remember me
+                                    <label class="form-check-label">
+                                        Remember me
                                     </label>
                                 </div>
                             </div>
@@ -182,9 +184,7 @@
             </div>
         </div>
     </div>
-</div>
-<!-- Login Modal end -->
-
+</div><!-- Login Modal end -->
 <div class="container">
 
     <div class="row row-content">
@@ -220,7 +220,8 @@
                         <img class="d-block w-100" src="img/chrome-river.jpg" alt="Chrome River Campground" />
                         <div class="carousel-caption">
                             <h3>Chrome River Campground</h3>
-                            <p class="d-none d-sm-block"> Spend a few sunny days and starry nights beneath a canopy of
+                            <p class="d-none d-sm-block">
+                                Spend a few sunny days and starry nights beneath a canopy of
                                 old-growth firs at this enchanting spot by the Chrome River.</p>
                         </div>
                     </div>
@@ -235,20 +236,32 @@
                     <span class="carousel-control-next-icon"></span>
                     <span class="sr-only">Next</span>
                 </a>
+                <!-- Play/Pause buttons for Carousel -->
+                <div class="btn-group" id="carouselButton">
+                    <button class="btn btn-danger btn-sm" id="carouselPause">
+                        <i class="fa fa-pause"></i>
+                    </button>
+                    <button class="btn btn-danger btn-sm" id="carouselPlay">
+                        <i class="fa fa-play"></i>
+                    </button>
+                </div>
+                <!-- Play/Pause end buttons for Carousel -->
             </div>
+
+
         </div>
     </div>
 
     <div class="row row-content align-items-center">
         <!--The align-items-center class is used on rows and it will
-                        center all the columns inside that row vertically
-                        related classes to align-items-center: align-items-start, align-items-end,
-                        if you only want to align the vertical alignment of a single column, you can use an
-                        align-self class. -->
+                                                                                    center all the columns inside that row vertically
+                                                                                    related classes to align-items-center: align-items-start, align-items-end,
+                                                                                    if you only want to align the vertical alignment of a single column, you can use an
+                                                                                    align-self class. -->
         <div class="col-sm-4 order-sm-last col-md-3">
             <h2 class="text-sm-right">Discover & Review</h2>
             <!--class="text-sm-right" will align this text to the 
-                                    right on small and up viewports-->
+                                                                                                                                                            right on small and up viewports-->
         </div>
 
         <div class="col">
@@ -305,45 +318,45 @@
             </div>
         </div>
         <!-- <div class="row row-content align-items-center">
-        <div class="col-sm-6 mx-auto">
-            <div  id="reserveForm" class="card">
-                <h3 class="card-header bg-info text-light">Reserve a Campsite</h3>
-                <div class="card-body">
-                    <form>
-                        <div class="row form-group">
-                            
-                            <label class="col col-sm-6 col-form-label text-dark" for="Number of Campers">Number of Campers</label>
-                           
-                            <div class="col">
-                                <select placeholder ="select"class="form-control" name="numCampers" id="numCampers">
-                                    <option>Select...</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                                <label class="col-sm-6 col-form-label text-dark" for="Date">Date</label>
-                            
-                                <div class="col-sm-6">
-                                <input class="form-control" type="id" name="date" placeholder="mm/dd/yyyy"/>
-                            </div>
-                        </div>
-                        <div class="row-fluid form-group">
-                            <div class="col">
-                                <button text="Search" type="button" class="btn btn-primary">Reserve</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div> -->
+                                                                    <div class="col-sm-6 mx-auto">
+                                                                        <div  id="reserveForm" class="card">
+                                                                            <h3 class="card-header bg-info text-light">Reserve a Campsite</h3>
+                                                                            <div class="card-body">
+                                                                                <form>
+                                                                                    <div class="row form-group">
+                                                                                        
+                                                                                        <label class="col col-sm-6 col-form-label text-dark" for="Number of Campers">Number of Campers</label>
+                                                                                       
+                                                                                        <div class="col">
+                                                                                            <select placeholder ="select"class="form-control" name="numCampers" id="numCampers">
+                                                                                                <option>Select...</option>
+                                                                                                <option>1</option>
+                                                                                                <option>2</option>
+                                                                                                <option>3</option>
+                                                                                                <option>4</option>
+                                                                                                <option>5</option>
+                                                                                                <option>6</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row form-group">
+                                                                                            <label class="col-sm-6 col-form-label text-dark" for="Date">Date</label>
+                                                                                        
+                                                                                            <div class="col-sm-6">
+                                                                                            <input class="form-control" type="id" name="date" placeholder="mm/dd/yyyy"/>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row-fluid form-group">
+                                                                                        <div class="col">
+                                                                                            <button text="Search" type="button" class="btn btn-primary">Reserve</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                            
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div> -->
     </div>
 </div>
 <footer class="site-footer">
@@ -397,11 +410,22 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>$(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })</script>
+<!-- Jquery code for carouse button functionality -->
 <script>
     $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
+        $(".carousel").carousel({ interval: 2000 });
+        $("#carouselPause").click(function () {
+            $(".carousel").carousel("pause");
+        });
+        $("#carouselPlay").click(function () {
+            $(".carousel").carousel("cycle");
+        });
+    });
 </script>
+<!-- end Jquery code for carouse button functionality -->
 </body>
 
 </html>
